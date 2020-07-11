@@ -1,0 +1,27 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.semester{
+	width: 100%;
+     height: 25vh;
+    
+     text-align: center;
+     background: #4EEAF9;
+}
+
+.header-extradiv{
+    width: 100%;
+    height: 80vh;
+    margin: 0 0;
+    padding: 30px 20px;
+    text-align: center;
+ }
+ .extra-div a img{
+    width: 90%;
+    height: 200px;
+    border-radius: 10%;
+    margin-top: 20px;  
+ }
+  .extra-div a img:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+    background: #F4F6F7;
+}    
