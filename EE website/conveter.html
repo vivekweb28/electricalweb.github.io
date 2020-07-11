@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="css/subject/fundamental.css">
+</head>
+<body>
+
+ <div class="semester">
+  <div class="container headings text-center">
+ 	<h1>Electrical Engineering</h1>
+ 	<h3>4th Semester</h3>
+  <h4>DIGITAL ELECTRONICS</h4>
+   </div>
+  </div>
+
+ <section class="header-extradiv">
+  <div class="container headings text-center">
+    <h1 class="font-weight-bold ">A/D and D/A Converters</h1>
+    <h3 class="modal-footer">(Digital to Analog converters: weighted resistor/converter, R-2R
+Ladder, D/A converter, specifications for D/A converters,
+examples of D/A converter, lCs, sample and hold circuit,
+Analog to Digital converters: quantization and encoding,
+parallel comparator A/D converter, successive approximation
+A/D converter, counting A/D converter, dual slope A/D
+converter, A/D converter using voltage to frequency and
+voltage to time conversion, specifications of A/D converters,
+example of A/D converter ICs.)</h3>
+ 	</div>
+</section>
+
+<div class="modal-footer">
+  <div class="theory">
+    <h3>Digital to analog converters:</h3>
+    <p>A digital-to-analog converter (DAC, D/A, D2A or D-to-A) is a circuit that converts digital data (usually binary) into an analog signal (current or voltage). One important specification of a DAC is its resolution. It can be defined by the numbers of bits or its step size.</p>
+    <h3>Digital to Analog Converter using Binary-Weighted Resistors:</h3>
+    <p>A D/A converter using binary-weighted resistors is shown in the figure below. In the circuit, the op-amp is connected in the inverting mode. The op-amp can also be connected in the non-inverting mode. The circuit diagram represents a 4-digit converter. Thus, the number of binary inputs is four.</p>
+    <img src="image/img3.jpg">
+    <h3>R-2R Binary Ladder Digital to Analog Converter</h3>
+    <p>The R-2R Digital to Analog Converter uses only two resistance values R and 2R regardless of the number of bits of the converter compared to the summing amplifier implementation where each bit resistor has a different value. The circuit shown is a 3 bit DAC.</p>
+    <img src="image/img2.png">
+    <h3>Specifications for D/A converters:</h3>
+    <p>1) Resolution :
+The resolution of a converter is the smallest change in voltage which may be produced at the output (or input) of the converter. For example, an 8-bit D/A converter has 2^8-1=255 equal intervals. Hence the smallest change in output voltage is (1/255) of the full scale output range.
+
+Resolution should be high as possible. It depends on the number of bits in the digital input applied to DAC. Higher the number of bits, higher is the resolution.
+
+It can also be defined as the ratio of change in analog output voltage resulting from a change of 1LSB at the digital input. For n-bit DAC : </p>
+<p class="text-center">Resolution=Vfs/(2n−1)</p>
+<p>2) Linearity :
+The relation between the digital input and analog output should be linear. However practically it is not so due to error in the values of resistors used in resistive networks.</p>
+<p>3) Accuracy :
+Absolute accuracy is the maximum deviation between the actual converter output and the ideal converter output.
+Relative accuracy is the maximum deviation after gain and offset errors have been removed.</p>
+<p>4) Settling time :
+Settling time represents the time it takes for the output to settle within a specified band ±(1/2) LSB of its final value, after the change in digital input.
+It should be as small as possible.</p>
+<p>5) Monotonicity :
+A monotonic DAC is the one whose analog output increases for an increase in digital input. A monotonic characteristics is essential in control applications, otherwise oscillations can result. If a DAC has to be monotonic, the error should be less than ±(1/2) LSB at each output level.</p>
+<p>6) Stability :
+The performance of converter changes with temperature, age and power supply variations. So all the relevant parameters such as offset, gain, linearity error and monotonicity must be specified over the full temperature and power supply ranges.</p>
+<h3> Analog to Digital converters:</h3>
+<p>Analog-to-Digital converters (ADC) translate analog signals, real world signals like temperature, pressure, voltage, current, distance, or light intensity, into a digital representation of that signal. This digital representation can then be processed, manipulated, computed, transmitted or stored.</p>
+<img src="image/img4.gif">
+  </div>
+  
+</div>
+
+
+<section class="extradiv ">
+  <div class="modal-footer"></div>
+  <div class="container headings text-align-center">
+    <h1 class="font-weight-bold text-center ">Notes Related to this topic.</h1>
+    <h2>1. Notes provided by Faculty(RCCIIT) member:<a href="data/Analog&DigitalConverter.pdf" target="_blank">Click here</a></h2> 
+    <h2>2. A/D and D/A Converters:<a href="data/ADConverter.pdf" target="_blank">Click here</a></h2> 
+    <h2>3. Analog to Digital Converters :<a href="data/ADC_F08.pdf" target="_blank">Click here</a></h2>
+    <h2>4. Hand-written Notes:<a href="data/Electronicsss.pdf" target="_blank">Click here</a> (page no.: 147-159)</h2> 
+    </div> 
+</section>
+ 	<div class="container modal-footer">
+       <h1 class="container text-center">Video related to this topic.</h1>
+ 		<div class="row">
+
+      <div class="extra-div col-lg-6 col-md-6 col-12">
+      	<iframe width="500" height="290" src="https://www.youtube.com/embed/wd_VKSIiOO4" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <p>|| Hindi Lecture ||</p>
+      </div>
+      <div class="extra-div col-lg-6 col-md-6 col-12">
+      	<iframe width="500" height="290" src="https://www.youtube.com/embed/OTjekXZjOtE" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>|| English Lecture ||</p>
+      </div>
+    
+      </div>
+ 		
+ 	</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

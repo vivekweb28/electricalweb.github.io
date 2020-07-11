@@ -1,0 +1,264 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+a{ text-decoration: none; }
+a:hover{ text-decoration: none; }
+li{ list-style: none; }
+
+.extra-div h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: 400;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+
+.header{
+     width: 100%;
+     height: 100vh;
+     background-image: url('../image/2.jpg');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0 0);
+     position: relative;
+}
+.navbar:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background:  #fff;
+}
+
+}
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+     font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+        transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.center-div h1{
+    font-size: 3.5rem;
+}
+
+.header-buttons a{
+    border:1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.colorchange{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: #FAFA08;}
+    100%{color:#bf55ec; }
+}
+
+
+
+/************** contact us **************/
+
+.contactus{
+    width: 100%
+    height:70vh;
+    padding: 50px 0;
+    background-image: url('../image/vk12.png');
+    position: relative;
+    color: #fff!important;
+    font-weight: bold;
+}
+
+.contactus:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #B2BABB;
+    z-index: -1;
+}
+.form-group:hover{
+     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+     background: #F4F6F7;
+}
+.form-button button{
+    border:1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+.form-button button{
+      color: #50d1c0;
+    }
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+::placeholder{
+    font-size: 0.85rem;
+}
+
+/************** contact us end **************/
+
+/************** footer starts **************/
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    
+    position: relative;
+}
+
+
+
+
+.footersection li a{
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+/************** footer end **************/
+
+/************** social network **************/
+
+.social-network{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top:40%;
+    
+}
+.fa_icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa_icons:nth-child(even){
+    margin: 20px 0;
+}
+.fa_icons:hover{
+    background: red;
+}
+
+
+/************** social network end **************/
+
+
+/************** Offer section **************/
+
+.offersection{
+    width: 100%;
+    height: 70vh;
+    padding: 30px 30px;
+    background:#BFC9CA;
+
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+.box-offer a img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10%;
+    margin-top: 20px;
+
+}
+.box-offer{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.box-offer h3{
+    text-align: center;
+}
+
+.box-offer a img:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+    background: #F4F6F7;
+}
+/************** Offer section ends **************/
+
+
+#myBtn{
+    
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background-color: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+#myBtn:hover{
+    background-color: red;
+}
+
+/**********modal****************/
+
